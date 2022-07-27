@@ -1,0 +1,75 @@
+remote_theme: pmarsceill/just-the-docs
+show_downloads: false
+title: Oblivious DNS
+description: Practical Privacy for DNS
+# google_analytics: 
+# logo: "logo.png"
+
+search_enabled: false
+search:
+  # Split pages into sections that can be searched individually
+  # Supports 1 - 6, default: 2
+  heading_level: 2
+  # Maximum amount of previews per search result
+  # Default: 3
+  previews: 2
+  # Maximum amount of words to display before a matched word in the preview
+  # Default: 5
+  preview_words_before: 3
+  # Maximum amount of words to display after a matched word in the preview
+  # Default: 10
+  preview_words_after: 3
+  # Set the search token separator
+  # Default: /[\s\-/]+/
+  # Example: enable support for hyphenated search words
+  tokenizer_separator: /[\s/]+/
+  # Display the relative url in search results
+  # Supports true (default) or false
+  rel_url: true
+  # Enable or disable the search button that appears in the bottom right corner of every page
+  # Supports true or false (default)
+  button: false
+
+color_scheme: odns
+
+
+# Enable or disable heading anchors
+heading_anchors: true
+
+# Aux links for the upper right navigation
+# aux_links:
+#   "ODNS on GitHub":
+#     - "//github.com/nprint/nprint"
+  # "nPrintML on GitHub":
+  #   - "//github.com/nprint/nprintml"
+  # "pcapML on GitHub":
+  #   - "//github.com/nprint/pcapml"
+  # "pcapML Benchmark Repository":
+  #   - "//github.com/nprint/benchmarks"
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: false
+
+nav_sort: case_sensitive
+back_to_top: true
+back_to_top_text: "Back to top"
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+footer_content: "Copyright &copy; 2022 the ODNS team. Distributed by an <a href=\"https://github.com/nprint/pcapml/tree/master/LICENSE\">Apache 2.0 license.</a>"
+
+plugins:
+  - jekyll-seo-tag
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
